@@ -1,5 +1,7 @@
 package com.wigellkoncernen.biluthyrning.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -12,8 +14,9 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private ArrayList<Booking> listOfBookings = new ArrayList<Booking>();
+    @JsonIgnoreProperties("car")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "car", cascade = CascadeType.ALL)
+    private List<Booking> listOfBookings = new ArrayList<>();
     @Column (length =  15, nullable = false)
     private String plateNo;
     @Column (nullable = false)
@@ -37,11 +40,11 @@ public class Car {
         this.booked = booked;
     }
 
-    public ArrayList<Booking> getListOfBookings() {
+    public List<Booking> getListOfBookings() {
         return listOfBookings;
     }
 
-    public void setListOfBookings(ArrayList<Booking> listOfBookings) {
+    public void setListOfBookings(List<Booking> listOfBookings) {
         this.listOfBookings = listOfBookings;
     }
 
