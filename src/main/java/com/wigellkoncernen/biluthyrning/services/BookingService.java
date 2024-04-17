@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -42,6 +43,10 @@ public class BookingService implements BookingServiceInterface {
 
     @Override
     public void deleteBooking(Booking booking) {
+        bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking","id",booking.getId()));
+        bookingRepository.delete(booking);
+        logger.log(Level.WARN,"Booking with id "+booking.getId()+" deleted");
+
 
     }
 }

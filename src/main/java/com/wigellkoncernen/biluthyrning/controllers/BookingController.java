@@ -20,4 +20,9 @@ public class BookingController {
         bookingService.cancelBooking(booking);
         return ResponseEntity.ok("Order canceled");
     }
+
+    @DeleteMapping(value = "/deleteorder")
+    public void deleteBooking(@RequestBody Booking booking){
+        bookingService.deleteBooking(booking);
+    }
 }

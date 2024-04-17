@@ -7,8 +7,8 @@ INSERT INTO Car (plate_no,price,manufacturer,model,booked) VALUES ('OOP877',255,
 
 
 INSERT INTO Booking (start_date,end_date,customer_id,car_id, booked) VALUES ('2017-07-25','2017-07-29',1,1, true);
-=======
--- INSERT INTO Booking (start_date, end_date, customer_id, car_id) VALUES ('2017-07-25', '2017-07-30', 1, 1);
+
+INSERT INTO Booking (start_date, end_date, customer_id, car_id,booked) VALUES ('2017-07-25', '2017-07-30', 2, 2,false);
 
 
 
