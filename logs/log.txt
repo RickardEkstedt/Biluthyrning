@@ -14,3 +14,9 @@
 2024-04-17 08:47:57,713 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
 2024-04-17 08:47:57,752 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
 2024-04-17 08:47:59,274 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17 09:08:18,274 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17 09:08:18,317 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-17 09:08:19,773 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17 09:27:53,769 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17 09:27:53,806 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-17 09:27:55,266 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
