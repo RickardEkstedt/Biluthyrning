@@ -1,8 +1,0 @@
-2024-04-17 10:06:25,165 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
-2024-04-17 10:06:25,253 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-17 10:06:27,238 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
-2024-04-17 10:06:27,304 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-17 10:08:26,080 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
-2024-04-17 10:08:26,168 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-17 10:08:28,183 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
-2024-04-17 10:08:28,245 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
