@@ -20,4 +20,5 @@ public class CarService implements CarServiceInterface {
     public List<Car> getAvailableCars() {
         return carRepository.findByBookedFalse();
     }
+
 }

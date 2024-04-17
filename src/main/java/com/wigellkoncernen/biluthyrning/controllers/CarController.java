@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/cars")
+@RequestMapping("/api/v1")
 public class CarController {
 
     @Autowired
     private CarService carService;
 
-    @GetMapping
+    @GetMapping(value ="/cars")
     public ResponseEntity<List<Car>> getAvailableCars () {
         List<Car> availableCars = carService.getAvailableCars();
         return ResponseEntity.ok(availableCars);

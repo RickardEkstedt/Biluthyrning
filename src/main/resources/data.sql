@@ -5,7 +5,8 @@ VALUES ('Gertrud','Gert','gertrud@info.se','Gåsvägen 13 66194 Ankeborg',066277
 INSERT INTO Car (plate_no,price,manufacturer,model,booked) VALUES ('OOP877',255,'Audi','A1',true),
                 ('UBB771',677,'Koningsegg','Regera',false);
 
-INSERT INTO Booking (date,customer_id,car_id) VALUES ('2017-07-25',1,1);
+INSERT INTO Booking (start_date, end_date, customer_id, car_id) VALUES ('2017-07-25', '2017-07-30', 1, 1);
+
 
 --INSERT INTO Customer (name) VALUES ('Gertrud');
 
