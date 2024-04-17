@@ -4,7 +4,6 @@ package com.wigellkoncernen.biluthyrning.entities;
 //är alla bokningar bara direkt ifrån idag? kan man kolla en vecka frammåt och se vilka som är bokade?
 //är datumet för bokning bara från idag och datumet man anger är sista dagen?
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -16,40 +15,29 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    private LocalDate startDate;
-    @Column
-    private LocalDate endDate;
-    @JsonIgnoreProperties("listOfBookings")
+        private LocalDate date;
+    //private LocalDate endDate;
     @ManyToOne(cascade = CascadeType.ALL)
     private Customer customer;
-    @JsonIgnoreProperties("listOfBookings")
+
     @ManyToOne(cascade = CascadeType.ALL)
     private Car car;
 
     public Booking() {
     }
 
-    public Booking(LocalDate startDate,LocalDate endDate, Customer customer, Car car) {
-        this.startDate = startDate;
-        this.endDate = endDate;
+    public Booking(LocalDate date, Customer customer, Car car) {
+        this.date = date;
         this.customer = customer;
         this.car = car;
     }
 
-    public LocalDate getStartDate() {
-        return startDate;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setStartDate(LocalDate date) {
-        this.startDate = date;
-    }
-
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Customer getCustomer() {
