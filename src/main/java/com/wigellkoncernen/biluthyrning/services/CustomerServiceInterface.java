@@ -1,5 +1,6 @@
 package com.wigellkoncernen.biluthyrning.services;
 
+import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
 
 import java.util.List;

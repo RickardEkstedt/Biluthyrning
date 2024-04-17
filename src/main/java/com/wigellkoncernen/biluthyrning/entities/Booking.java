@@ -19,6 +19,9 @@ public class Booking {
     private LocalDate startDate;
     @Column
     private LocalDate endDate;
+
+    @Column
+    private boolean booked;
     @JsonIgnoreProperties("listOfBookings")
     @ManyToOne(cascade = CascadeType.ALL)
     private Customer customer;
@@ -29,9 +32,10 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(LocalDate startDate,LocalDate endDate, Customer customer, Car car) {
+    public Booking(LocalDate startDate, LocalDate endDate, boolean booked, Customer customer, Car car) {
         this.startDate = startDate;
         this.endDate = endDate;
+        this.booked=booked;
         this.customer = customer;
         this.car = car;
     }
@@ -50,6 +54,14 @@ public class Booking {
 
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
+    }
+
+    public boolean isBooked() {
+        return booked;
+    }
+
+    public void setBooked(boolean booked) {
+        this.booked = booked;
     }
 
     public Customer getCustomer() {

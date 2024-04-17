@@ -1,5 +1,6 @@
 package com.wigellkoncernen.biluthyrning.services;
 
+import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
 import com.wigellkoncernen.biluthyrning.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,8 @@ import java.util.List;
 public class CustomerService implements CustomerServiceInterface {
     @Autowired
     private CustomerRepository customerRepository;
+
+
 
 
     @Override
