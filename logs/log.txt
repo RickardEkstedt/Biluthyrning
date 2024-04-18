@@ -1,0 +1,260 @@
+2024-04-17 15:24:35,015 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17 15:24:35,035 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-17 15:24:35,915 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17 15:25:52,258 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17 15:25:52,280 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-17 15:25:53,137 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17 15:25:55,781 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-17 15:32:31,290 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-17 15:32:31,312 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-17 15:32:32,157 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-17 15:32:41,763 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 13:50:15,750 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 13:50:15,776 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 13:50:16,778 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 13:52:39,886 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 13:53:24,219 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 13:53:24,243 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 13:53:25,170 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 13:54:36,137 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 13:58:24,494 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 13:58:24,516 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 13:58:25,429 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 13:58:35,842 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:02:36,968 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:02:36,991 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:02:37,916 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:02:43,625 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:03:15,545 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:03:15,568 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:03:16,535 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:03:20,070 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:09:12,944 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:09:12,964 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:09:13,791 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:09:37,892 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:21:40,044 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:21:40,098 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:21:41,869 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:21:41,916 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:22:02,755 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:22:02,756 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:22:21,341 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:22:21,360 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:22:22,184 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:22:42,257 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:23:05,456 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:23:47,535 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:23:47,558 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:23:48,383 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:26:12,993 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:26:12,993 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:27:02,738 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:27:16,005 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:28:03,017 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:28:03,038 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:28:03,871 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:28:17,095 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:28:17,095 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:30:18,180 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:30:18,199 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:30:19,025 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:30:26,587 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:30:26,588 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:31:09,624 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:31:09,624 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:31:28,775 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:31:30,824 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:37:33,223 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:37:33,244 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:37:34,077 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:37:44,977 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:37:44,978 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:37:49,201 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:38:02,004 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:44:34,241 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:44:34,261 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:44:35,079 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:44:48,103 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:44:48,104 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:47:38,899 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:47:38,920 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:47:39,769 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:47:42,684 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:47:42,684 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:47:46,440 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:47:49,340 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:49:52,019 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:49:52,038 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:49:52,866 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:50:16,495 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:50:16,515 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:50:17,336 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:50:22,635 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:50:22,635 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 14:50:42,227 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 14:50:45,091 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:51:13,525 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:51:13,545 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:51:14,364 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:51:25,949 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:55:42,782 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:55:42,802 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:55:43,644 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:55:48,782 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 14:56:22,244 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 14:56:22,263 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 14:56:23,083 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 14:56:26,776 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 14:56:26,776 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:01:11,699 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:01:11,719 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:01:12,536 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:01:15,591 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:05:50,358 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:05:50,409 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:08:54,819 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:08:54,861 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:09:52,995 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:09:53,038 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:10:39,509 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:10:39,550 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:11:00,582 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:11:00,622 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:11:14,212 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:11:14,232 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:11:15,050 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:11:21,050 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:12:49,758 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:12:49,809 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:13:08,731 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:13:51,942 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:13:51,963 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:13:52,786 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:13:57,140 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:13:57,141 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:19:28,441 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:19:28,461 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:19:29,286 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:19:46,493 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:25:37,635 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:26:28,325 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:26:28,345 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:26:29,180 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:26:33,322 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 15:26:56,162 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:27:01,800 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:27:01,821 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:27:02,636 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:27:06,373 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:27:06,373 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:31:07,250 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:31:07,279 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:31:08,162 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:31:22,082 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 15:31:38,128 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:31:38,149 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:31:38,988 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:32:46,014 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:34:52,379 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:34:52,399 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:34:53,245 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:35:23,611 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:36:28,037 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:36:28,057 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:36:28,953 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:36:36,877 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:36:36,878 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:40:27,997 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:40:28,017 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:40:28,844 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:40:35,620 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:40:35,621 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:40:57,583 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:40:57,602 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:40:58,425 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:41:07,117 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:50:28,873 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:50:28,896 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:50:29,721 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:50:38,479 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:50:38,480 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:51:08,527 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:51:08,547 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:51:09,383 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:51:11,350 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:51:11,351 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:52:27,874 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:52:27,894 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:52:28,702 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:52:33,158 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:52:33,158 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:52:40,073 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 15:52:42,233 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:55:57,934 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:55:57,954 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:55:58,778 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:56:04,265 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:56:04,265 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 15:59:19,430 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:59:19,450 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:59:20,273 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:59:38,307 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-18 15:59:39,832 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 15:59:54,282 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 15:59:54,303 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 15:59:55,140 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 15:59:57,841 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 15:59:57,842 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 16:00:17,740 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 16:00:17,760 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:00:18,584 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:00:23,248 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 16:03:46,514 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:03:46,561 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:04:07,643 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:04:07,685 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:04:22,073 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:04:22,115 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:04:42,248 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:04:42,289 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:04:53,626 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:04:53,661 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:05:02,155 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 16:05:02,175 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:05:03,048 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:05:12,904 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 16:07:17,471 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 16:07:17,491 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:07:18,322 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:07:22,389 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 23503, SQLState: 23503
+2024-04-18 16:07:22,389 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Referential integrity constraint violation: "FKD9P8QDY5SJ4YM0BMKSDX7YRWJ: PUBLIC.BOOKING FOREIGN KEY(CAR_ID) REFERENCES PUBLIC.CAR(ID) (CAST(2 AS BIGINT))"; SQL statement:
+delete from car where id=? [23503-224]
+2024-04-18 16:07:31,984 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 16:07:32,006 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:07:32,885 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:07:34,675 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-18 16:08:24,822 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 1 was deleted
+2024-04-18 16:09:07,338 : INFO : org.hibernate.Version: logVersion : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18 16:09:07,358 : INFO : org.hibernate.cache.internal.RegionFactoryInitiator: initiateService : HHH000026: Second-level cache disabled
+2024-04-18 16:09:08,215 : INFO : org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: initiateService : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18 16:09:16,252 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted

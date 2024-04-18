@@ -23,10 +23,10 @@ public class Booking {
     @Column
     private boolean booked;
     @JsonIgnoreProperties("listOfBookings")
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Customer customer;
     @JsonIgnoreProperties("listOfBookings")
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Car car;
 
     public Booking() {
