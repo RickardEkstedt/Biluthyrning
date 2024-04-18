@@ -21,12 +21,16 @@ public class BookingService implements BookingServiceInterface {
     BookingRepository bookingRepository;
 
     @Override
-    public List<Booking> getBookings() {
-        return null;
+    public List<Booking> getAllBookings(Customer customer) {
+        List<Booking> bookings = bookingRepository.findByCustomer(customer);
+        if (bookings.isEmpty()) {
+            throw new ResourceNotFoundException("Booking", "customer", customer.getId());
+        }
+        return bookings;
     }
 
     @Override
-    public List<Booking> getMyBookings(Customer customer) {
+    public List<Booking> getBookings() {
         return null;
     }
 
@@ -49,4 +53,5 @@ public class BookingService implements BookingServiceInterface {
 
 
     }
+
 }

@@ -2,7 +2,6 @@ package com.wigellkoncernen.biluthyrning.services;
 
 import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Car;
-import com.wigellkoncernen.biluthyrning.repositories.BookingRepository;
 import com.wigellkoncernen.biluthyrning.repositories.CarRepository;
 import com.wigellkoncernen.biluthyrning.repositories.exceptions.ResourceNotFoundException;
 import org.apache.log4j.Level;
@@ -28,6 +27,10 @@ public class CarService implements CarServiceInterface {
         return carRepository.findByBookedFalse();
     }
 
+    @Override
+    public List<Car> getAllCars() {
+        return carRepository.findAll();
+    }
     @Override
     public void deleteCar(Car car) {
         Car existingCar = carRepository.findById(car.getId()).orElseThrow(() -> new ResourceNotFoundException("Car", "id", car.getId()));
