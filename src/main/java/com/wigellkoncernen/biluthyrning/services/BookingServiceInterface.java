@@ -8,7 +8,8 @@ import java.util.List;
 public interface BookingServiceInterface {
 
     List<Booking> getBookings();
-    List<Booking> getMyBookings(Customer customer); //request-body
+
+    List<Booking> getAllBookings(Customer customer); //request-body
 
     void cancelBooking(Booking booking); //request-body, PUT
 

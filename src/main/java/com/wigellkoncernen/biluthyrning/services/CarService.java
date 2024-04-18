@@ -21,4 +21,8 @@ public class CarService implements CarServiceInterface {
         return carRepository.findByBookedFalse();
     }
 
+    @Override
+    public List<Car> getAllCars() {
+        return carRepository.findAll();
+    }
 }

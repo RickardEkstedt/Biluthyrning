@@ -22,4 +22,9 @@ public class CarController {
         List<Car> availableCars = carService.getAvailableCars();
         return ResponseEntity.ok(availableCars);
     }
+    @GetMapping("/allcars")
+    public ResponseEntity<List<Car>> getAllCars() {
+        List<Car> allCars = carService.getAllCars();
+        return ResponseEntity.ok().body(allCars);
+    }
 }
