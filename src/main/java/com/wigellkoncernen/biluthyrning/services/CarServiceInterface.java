@@ -7,7 +7,11 @@ import java.util.List;
 public interface CarServiceInterface {
     List<Car> getAvailableCars();
 
+
+    Car addNewCar(Car car);
+
    List<Car> getAllCars();
+
 
 
     //kund lista tillgängliga bilar, ev. via CarDTO entity (separata repo, service & controller)
