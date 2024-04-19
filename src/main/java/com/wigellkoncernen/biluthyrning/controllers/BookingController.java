@@ -23,8 +23,14 @@ public class BookingController {
 
     @PutMapping(value = "/cancelorder")
     public ResponseEntity<String> cancelOrder(@RequestBody Booking booking) {
+        System.out.println("test");
         bookingService.cancelBooking(booking);
         return ResponseEntity.ok("Order canceled");
+    }
+
+    @DeleteMapping(value = "/deleteorder")
+    public void deleteBooking(@RequestBody Booking booking){
+        bookingService.deleteBooking(booking);
     }
 
         @PostMapping("/ordercar")

@@ -33,4 +33,9 @@ public class CarController {
         return ResponseEntity.ok().body(allCars);
 
     }
+
+    @DeleteMapping(value = "/deletecar")
+    public void deleteCar(@RequestBody Car car) {
+        carService.deleteCar(car);
+    }
 }

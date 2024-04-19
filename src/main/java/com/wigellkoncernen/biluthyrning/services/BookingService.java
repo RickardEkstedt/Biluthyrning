@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import java.util.Optional;
 
 
 @Service
@@ -40,15 +41,19 @@ public class BookingService implements BookingServiceInterface {
     @Override
     public void cancelBooking(Booking booking) {
         bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking", "id", booking.getId()));
-        booking.setBooked(false);
+//booking.setBooked(false);
+       // booking.setBooked(false);
         bookingRepository.save(booking);
-        logger.log(Level.WARN, "Customer canceled booking with id " + booking.getId());
+        logger.log(Level.WARN, "Booking with id " + booking.getId() + " canceled");
         //TODO kolla om det går att använda bara id och skicka med det från postman istället
     }
 
-
     @Override
     public void deleteBooking(Booking booking) {
+        bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking","id",booking.getId()));
+        bookingRepository.delete(booking);
+        logger.log(Level.WARN,"Booking with id "+booking.getId()+" deleted");
+
 
     }
 
@@ -101,4 +106,3 @@ public class BookingService implements BookingServiceInterface {
 
 
 }
-

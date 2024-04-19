@@ -1,13 +1,14 @@
 package com.wigellkoncernen.biluthyrning.services;
 
+import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.exceptions.ResourceAlreadyExists;
 import com.wigellkoncernen.biluthyrning.repositories.CarRepository;
+import com.wigellkoncernen.biluthyrning.exceptions.ResourceNotFoundException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -45,6 +46,17 @@ public class CarService implements CarServiceInterface {
     @Override
     public List<Car> getAllCars() {
         return carRepository.findAll();
+    }
+    @Override
+    public void deleteCar(Car car) {
+        Car existingCar = carRepository.findById(car.getId()).orElseThrow(() -> new ResourceNotFoundException("Car", "id", car.getId()));
+        for (Booking booking : existingCar.getListOfBookings()) {
+            booking.setCar(null);
+        }
+        existingCar.getListOfBookings().clear();
+        carRepository.save(existingCar);
+        carRepository.deleteById(existingCar.getId());
+        logger.log(Level.WARN, "Car with id "+existingCar.getId()+" was deleted");
     }
 
 }
