@@ -1,6 +1,5 @@
 package com.wigellkoncernen.biluthyrning.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -16,6 +15,8 @@ public class Customer {
     @JsonIgnoreProperties("customer")
     @OneToMany(fetch = FetchType.EAGER,mappedBy = "customer",cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
+
+
     @Column (length =  35, nullable = false)
     private String name;
     @Column (length =  25, nullable = false)

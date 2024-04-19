@@ -4,9 +4,7 @@ import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.services.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,9 +15,15 @@ public class CarController {
     @Autowired
     private CarService carService;
 
-    @GetMapping(value ="/cars")
-    public ResponseEntity<List<Car>> getAvailableCars () {
+    @GetMapping(value = "/cars")
+    public ResponseEntity<List<Car>> getAvailableCars() {
         List<Car> availableCars = carService.getAvailableCars();
         return ResponseEntity.ok(availableCars);
+    }
+
+
+    @PostMapping(value = "/addcar")
+    public ResponseEntity<Car> addNewCar(@RequestBody Car car) {
+        return ResponseEntity.ok(carService.addNewCar(car));
     }
 }

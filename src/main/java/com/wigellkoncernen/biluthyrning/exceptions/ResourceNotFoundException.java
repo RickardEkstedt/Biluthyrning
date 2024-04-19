@@ -1,4 +1,4 @@
-package com.wigellkoncernen.biluthyrning.repositories.exceptions;
+package com.wigellkoncernen.biluthyrning.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
