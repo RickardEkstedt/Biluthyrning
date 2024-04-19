@@ -27,6 +27,7 @@ public class CarService implements CarServiceInterface {
     }
 
 
+
     @Override
     public Car addNewCar(Car car) {
         for (Car c : carRepository.findAll()) {
@@ -39,5 +40,11 @@ public class CarService implements CarServiceInterface {
     }
 
 
+
+
+    @Override
+    public List<Car> getAllCars() {
+        return carRepository.findAll();
+    }
 
 }

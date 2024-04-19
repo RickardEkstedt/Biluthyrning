@@ -22,8 +22,15 @@ public class CarController {
     }
 
 
+
     @PostMapping(value = "/addcar")
     public ResponseEntity<Car> addNewCar(@RequestBody Car car) {
-        return ResponseEntity.ok(carService.addNewCar(car));
+        return ResponseEntity.ok(carService.addNewCar(car))};
+
+    @GetMapping("/allcars")
+    public ResponseEntity<List<Car>> getAllCars() {
+        List<Car> allCars = carService.getAllCars();
+        return ResponseEntity.ok().body(allCars);
+
     }
 }

@@ -9,7 +9,8 @@ public interface BookingServiceInterface {
 
     List<Booking> getBookings();
 
-    List<Booking> getMyBookings(Customer customer); //request-body
+    List<Booking> getAllBookings(Customer customer); //request-body
+
 
     void cancelBooking(Booking booking); //request-body, PUT
 //    void cancelBooking(Long id); //request-body, PUT
