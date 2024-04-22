@@ -13,7 +13,6 @@ VALUES ('OOP877', 255, 'Audi', 'A1', false),
        ('AAP177',2000,'International','CXT','false');
 
 
-
 INSERT INTO Booking (start_date, end_date, customer_id, car_id, booked)
 VALUES ('2024-07-25', '2024-07-29', 1, 1, true),
        ('2024-05-09','2024-05-11',3,3,true),

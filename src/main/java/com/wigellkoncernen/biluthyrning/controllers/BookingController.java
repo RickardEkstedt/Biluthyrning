@@ -6,7 +6,9 @@ import com.wigellkoncernen.biluthyrning.services.BookingService;
 import org.hibernate.query.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+
 import java.util.List;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,7 +20,7 @@ public class BookingController {
     @GetMapping("/myorders")
     public ResponseEntity<List<Booking>> getMyOrders(@RequestBody Customer customer) {
         List<Booking> myOrders = bookingService.getAllBookings(customer);
-    return ResponseEntity.ok().body(myOrders);
+        return ResponseEntity.ok().body(myOrders);
     }
 
     @PutMapping(value = "/cancelorder")
@@ -29,14 +31,15 @@ public class BookingController {
     }
 
     @DeleteMapping(value = "/deleteorder")
-    public void deleteBooking(@RequestBody Booking booking){
+    public void deleteBooking(@RequestBody Booking booking) {
         bookingService.deleteBooking(booking);
     }
 
-        @PostMapping("/ordercar")
-        public ResponseEntity<Booking> orderCar (@RequestBody Booking booking){
-            return ResponseEntity.ok(bookingService.bookCar(booking));
-        }
+
+    @PostMapping("/ordercar")
+    public ResponseEntity<String> orderCar(@RequestBody Booking booking) {
+        return ResponseEntity.ok(bookingService.bookCar(booking));
+    }
 
 }
 

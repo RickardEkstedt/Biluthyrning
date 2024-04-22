@@ -15,7 +15,7 @@ public class Car {
     private Long id;
 
     @JsonIgnoreProperties("car")
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "car", cascade = CascadeType.ALL)
+    @OneToMany(/*fetch = FetchType.LAZY, */mappedBy = "car", cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
     @Column (length =  15, nullable = false)
     private String plateNo;
