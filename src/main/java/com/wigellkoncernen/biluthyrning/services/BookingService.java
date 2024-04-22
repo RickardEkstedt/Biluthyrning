@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -41,8 +42,7 @@ public class BookingService implements BookingServiceInterface {
     @Override
     public void cancelBooking(Booking booking) {
         bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking", "id", booking.getId()));
-//booking.setBooked(false);
-       // booking.setBooked(false);
+        booking.setBooked(false);
         bookingRepository.save(booking);
         logger.log(Level.WARN, "Booking with id " + booking.getId() + " canceled");
         //TODO kolla om det går att använda bara id och skicka med det från postman istället
@@ -50,26 +50,22 @@ public class BookingService implements BookingServiceInterface {
 
     @Override
     public void deleteBooking(Booking booking) {
-        bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking","id",booking.getId()));
+        bookingRepository.findById(booking.getId()).orElseThrow(() -> new ResourceNotFoundException("Booking", "id", booking.getId()));
         bookingRepository.delete(booking);
-        logger.log(Level.WARN,"Booking with id "+booking.getId()+" deleted");
-
-
+        logger.log(Level.WARN, "Booking with id " + booking.getId() + " deleted");
     }
 
 
     @Override
-    public Booking bookCar(Booking newBooking) { //TODO i postman om jag anger  id för bokningen får jag med alla info om kund och bil utifrån id
-        //men skriver jag inte med boknings id får jag null värden på allt från kund och bil
-
+    public String bookCar(Booking newBooking) {  //Har ändrat till string ist för Booking
         if (bookingRepository.existsById(newBooking.getCustomer().getId())) { // om kunden finns
-
             if (bookingRepository.existsById(newBooking.getCar().getId())) {//om bilen finns
                 if (bookingDateAvailable(newBooking)) {
                     logger.log(Level.WARN, "Customer with id " + newBooking.getCustomer().getId() + " have booked a car");
-                    return bookingRepository.save(newBooking);
+                    bookingRepository.save(newBooking);
+                    return "Customer with id " + newBooking.getCustomer().getId() + " have booked car with id " + newBooking.getCar().getId();
                 } else
-                    throw new ResourceAlreadyExists("Order", "date", newBooking.getStartDate() + " - " + newBooking.getEndDate());
+                    throw new RuntimeException("Date for booking not available");
             } else
                 throw new ResourceNotFoundException("Car", "id", newBooking.getCar().getId());
         } else throw new
@@ -78,31 +74,24 @@ public class BookingService implements BookingServiceInterface {
 
 
     public boolean bookingDateAvailable(Booking newBooking) {
-
-        boolean bookingDateFree = true;
+        LocalDate newStartDate = newBooking.getStartDate();
+        LocalDate newEndDate = newBooking.getEndDate();
 
         for (Booking oldBooking : bookingRepository.findAll()) {
             if (oldBooking.getCar().getId().equals(newBooking.getCar().getId())) { //Går bara igenom de ordrar som har samma bil som i vill boka
+                LocalDate oldStartDate = oldBooking.getStartDate();
+                LocalDate oldEndDate = oldBooking.getEndDate();
 
-                System.out.println("Start gammal " + oldBooking.getStartDate());
-                System.out.println("SLut gammal " + oldBooking.getEndDate());
+                boolean startDateOverlaps = newStartDate.isAfter(oldStartDate) && newStartDate.isBefore(oldEndDate);
+                boolean endDateOverlaps = newEndDate.isAfter(oldStartDate) && newEndDate.isBefore(oldEndDate);
+                boolean sameStartDate = newStartDate.isEqual(oldStartDate);
+                boolean sameEndDate = newEndDate.isEqual(oldEndDate);
 
-                if ((newBooking.getStartDate().isAfter(oldBooking.getStartDate()) &&  //Nya startdatum är efter gamla startdatum och
-                        newBooking.getStartDate().isBefore(oldBooking.getEndDate()) //nya startdatum är före gamla slutdatum
-                )                                                                     //eller
-                        || (newBooking.getStartDate().isBefore(oldBooking.getStartDate()) && //nya startdatumet är före gamla startdatumet och
-                        newBooking.getEndDate().isAfter(oldBooking.getStartDate())           //nya slutdatumet är efter gamla startdatumet
-                )                                                                           //eller
-                        || (newBooking.getStartDate().isEqual(oldBooking.getStartDate()))   //nya startdatumet är samma som gamla startdatum eller
-                        || (newBooking.getEndDate().isEqual(oldBooking.getEndDate()))       //nya slutdatum är samma som gamla slutdatum
-                ) {
-                    bookingDateFree = false;
+                if (startDateOverlaps || endDateOverlaps || sameStartDate || sameEndDate) {
+                    return false;
                 }
             }
         }
-        return bookingDateFree;
+        return true;
     }
-
-
-
 }

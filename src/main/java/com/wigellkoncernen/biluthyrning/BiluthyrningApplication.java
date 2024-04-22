@@ -11,5 +11,4 @@ public class BiluthyrningApplication {
 
         System.out.println("Tweet tweet");
     }
-
 }

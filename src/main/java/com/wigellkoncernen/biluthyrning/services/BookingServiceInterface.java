@@ -17,7 +17,7 @@ public interface BookingServiceInterface {
 
     void deleteBooking(Booking booking);
 
-    Booking bookCar(Booking booking);
+    String bookCar(Booking booking);
 
 
 }

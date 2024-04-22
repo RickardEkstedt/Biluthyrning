@@ -13,7 +13,7 @@ public class Customer {
     private Long id;
 
     @JsonIgnoreProperties("customer")
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "customer",cascade = CascadeType.ALL)
+    @OneToMany(/*fetch = FetchType.LAZY,*/mappedBy = "customer",cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
 
 
