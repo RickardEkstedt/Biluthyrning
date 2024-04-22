@@ -73,6 +73,9 @@ public class CarService implements CarServiceInterface {
             car.setBooked(updatedCar.isBooked());
 
             carRepository.save(car);
+
+            // Konvertera carId till en sträng och logga den
+            logger.log(Level.INFO,"Car with ID " + carId.toString() + " updated");
         } else {
             throw new ResourceNotFoundException("Car", "id", carId);
         }
