@@ -24,11 +24,9 @@ public class CustomerService implements CustomerServiceInterface {
 
     @Override
     public List<Customer> getCustomers() {
-        synchronized (customerRepository) {
-
-            return new ArrayList<>(customerRepository.findAll());
-        }
+        return customerRepository.findAll();
     }
+
 
     @Override
     public void deleteCustomer(Customer customer) {

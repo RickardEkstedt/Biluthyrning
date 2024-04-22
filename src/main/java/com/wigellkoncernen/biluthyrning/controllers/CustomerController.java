@@ -20,8 +20,4 @@ public class CustomerController {
         return customerService.getCustomers();
 
     }
-
-
-
-
 }

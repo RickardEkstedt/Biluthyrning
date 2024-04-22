@@ -1,5 +1,6 @@
 package com.wigellkoncernen.biluthyrning.entities;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -12,10 +13,10 @@ public class Customer {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @JsonIgnoreProperties("customer")
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "customer",cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
-
 
     @Column (length =  35, nullable = false)
     private String name;
