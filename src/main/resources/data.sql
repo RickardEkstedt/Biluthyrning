@@ -8,15 +8,15 @@ VALUES ('Gertrud', 'Gert', 'gertrud@info.se', 'Gåsvägen 13, 66194 Ankeborg', 0
 INSERT INTO Car (plate_no, price, manufacturer, model, booked)
 VALUES ('OOP877', 255, 'Audi', 'A1', false),
        ('UBB771', 677, 'Koningsegg', 'Regera', false),
-       ('PLZ945',450,'BMW','Isetta','false'),
-       ('XYZ537',350,'Peel','P50','false'),
-       ('AAP177',2000,'International','CXT','false');
+       ('PLZ945',450,'BMW','Isetta',false),
+       ('XYZ537',350,'Peel','P50',false),
+       ('AAP177',2000,'International','CXT',false);
 
 
 INSERT INTO Booking (start_date, end_date, customer_id, car_id, booked)
-VALUES ('2024-07-25', '2024-07-29', 1, 1, true),
-       ('2024-05-09','2024-05-11',3,3,true),
-       ('2024-06-20','2024-06-30',4,5,true);
+VALUES ('2024-04-22', '2024-04-22', 1, 1, true),
+       ('2024-04-20','2024-04-21',3,3,true),
+       ('2024-04-21','2024-06-30',4,5,true);
 
 
 -- INSERT INTO Booking (start_date, end_date, customer_id, car_id) VALUES ('2017-07-25', '2017-07-30', 1, 1);

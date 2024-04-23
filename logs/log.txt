@@ -11,3 +11,16 @@ select b1_0.id,b1_0.booked,b1_0.car_id,c1_0.id,c1_0.booked,c1_0.manufacturer,c1_
 2024-04-19 12:39:36,819 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Customer canceled booking with id 1
 2024-04-19 13:05:17,098 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
 2024-04-19 13:05:54,546 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-19 09:42:43,405 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-19 09:43:06,758 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Customer canceled booking with id 1
+2024-04-19 09:46:43,696 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: addNewCar : Admin added new car with plateNo abc 123
+2024-04-19 09:50:20,966 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-19 09:51:15,303 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-19 12:02:56,447 : WARN : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : SQL Error: 42104, SQLState: 42S04
+2024-04-19 12:02:56,455 : ERROR : org.hibernate.engine.jdbc.spi.SqlExceptionHelper: logExceptions : Table "BOOKING" not found (this database is empty); SQL statement:
+select b1_0.id,b1_0.booked,b1_0.car_id,c1_0.id,c1_0.booked,c1_0.manufacturer,c1_0.model,c1_0.plate_no,c1_0.price,b1_0.customer_id,c2_0.id,c2_0.adress,c2_0.email,c2_0.name,c2_0.phone,c2_0.user_name,b1_0.end_date,b1_0.start_date from booking b1_0 join car c1_0 on c1_0.id=b1_0.car_id join customer c2_0 on c2_0.id=b1_0.customer_id where b1_0.id=? [42104-224]
+2024-04-19 12:03:27,986 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Customer canceled booking with id 1
+2024-04-19 12:39:25,874 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-19 12:39:36,819 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Customer canceled booking with id 1
+2024-04-19 13:05:17,098 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-19 13:05:54,546 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted

@@ -23,6 +23,11 @@ public class BookingController {
         return ResponseEntity.ok().body(myOrders);
     }
 
+    @GetMapping("/orders")
+    public ResponseEntity<List<Booking>> getOrders(){
+        return ResponseEntity.ok(bookingService.getBookings());
+    }
+
     @PutMapping(value = "/cancelorder")
     public ResponseEntity<String> cancelOrder(@RequestBody Booking booking) {
         System.out.println("test");

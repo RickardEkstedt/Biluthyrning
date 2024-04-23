@@ -35,7 +35,7 @@ public class BookingService implements BookingServiceInterface {
 
     @Override
     public List<Booking> getBookings() {
-        return null;
+        return bookingRepository.findAll();
     }
 
 

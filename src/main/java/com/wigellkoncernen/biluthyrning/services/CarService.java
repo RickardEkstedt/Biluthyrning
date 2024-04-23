@@ -1,5 +1,6 @@
 package com.wigellkoncernen.biluthyrning.services;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.exceptions.ResourceAlreadyExists;
@@ -9,6 +10,9 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,8 +26,25 @@ public class CarService implements CarServiceInterface {
         this.carRepository = carRepository;
     }
 
+
     @Override
     public List<Car> getAvailableCars() {
+        for (Car car : carRepository.findAll()){
+            car.setBooked(false);
+            carRepository.save(car);
+            if (!car.getListOfBookings().isEmpty()){
+                for(Booking booking : car.getListOfBookings()){
+                    LocalDate currentDate = LocalDate.now();
+                    boolean checkStartDate = currentDate.isAfter(booking.getStartDate()) || currentDate.isEqual(booking.getStartDate());
+                    boolean checkEndDate = currentDate.isBefore(booking.getEndDate()) || currentDate.equals(booking.getEndDate());
+                    if(checkStartDate && checkEndDate){
+                        car.setBooked(true);
+                        carRepository.save(car);
+                    }
+                }
+            }
+        }
+
         return carRepository.findByBookedFalse();
     }
 
