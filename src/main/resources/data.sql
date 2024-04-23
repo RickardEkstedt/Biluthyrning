@@ -18,19 +18,3 @@ VALUES ('2024-07-25', '2024-07-29', 1, 1, true),
        ('2024-05-09','2024-05-11',3,3,true),
        ('2024-06-20','2024-06-30',4,5,true);
 
-
--- INSERT INTO Booking (start_date, end_date, customer_id, car_id) VALUES ('2017-07-25', '2017-07-30', 1, 1);
-
-
-   
-
--- INSERT INTO Booking (start_date, end_date, customer_id, car_id) VALUES ('2017-07-25', '2017-07-30', 1, 1);
-
---INSERT INTO Customer (name) VALUES ('Gertrud');
-
-
---       ('Persikogatan 101', 66194, 'Ankeborg'),--kajsa
---       ('Tomtebacken', 66194, 'Ankeborg'),-- joakim
---       ('Stenvägen 10', 66194, 'Ankeborg'); --musse pigg
-
-
