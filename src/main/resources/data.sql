@@ -6,11 +6,11 @@ VALUES ('Gertrud', 'Gert', 'gertrud@info.se', 'Gåsvägen 13, 66194 Ankeborg', 0
        ('Pytte', 'e-ttyp', 'pytte@yahoo.com', 'Stenvägen 10, 66194 Ankeborg', '0709010356');
 
 INSERT INTO Car (plate_no, price, manufacturer, model, booked)
-VALUES ('OOP877', 255, 'Audi', 'A1', false),
+VALUES ('OOP877', 255, 'Audi', 'A1', true),
        ('UBB771', 677, 'Koningsegg', 'Regera', false),
-       ('PLZ945',450,'BMW','Isetta','false'),
-       ('XYZ537',350,'Peel','P50','false'),
-       ('AAP177',2000,'International','CXT','false');
+       ('PLZ945',450,'BMW','Isetta', true),
+       ('XYZ537',350,'Peel','P50', false),
+       ('AAP177',2000,'International','CXT', true);
 
 
 INSERT INTO Booking (start_date, end_date, customer_id, car_id, booked)

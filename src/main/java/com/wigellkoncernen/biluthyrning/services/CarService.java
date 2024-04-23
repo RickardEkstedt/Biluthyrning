@@ -8,8 +8,10 @@ import com.wigellkoncernen.biluthyrning.exceptions.ResourceNotFoundException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CarService implements CarServiceInterface {
@@ -57,6 +59,26 @@ public class CarService implements CarServiceInterface {
         carRepository.save(existingCar);
         carRepository.deleteById(existingCar.getId());
         logger.log(Level.WARN, "Car with id "+existingCar.getId()+" was deleted");
+    }
+    public void updateCar(Car updatedCar) {
+        Long carId = updatedCar.getId();
+        Optional<Car> optionalCar = carRepository.findById(carId);
+        if (optionalCar.isPresent()) {
+            Car car = optionalCar.get();
+            // Uppdatera egenskaper för bilen med de nya värdena från updatedCar
+            car.setPlateNo(updatedCar.getPlateNo());
+            car.setManufacturer(updatedCar.getManufacturer());
+            car.setModel(updatedCar.getModel());
+            car.setPrice(updatedCar.getPrice());
+            car.setBooked(updatedCar.isBooked());
+
+            carRepository.save(car);
+
+            // Konvertera carId till en sträng och logga den
+            logger.log(Level.INFO,"Car with ID " + carId.toString() + " updated");
+        } else {
+            throw new ResourceNotFoundException("Car", "id", carId);
+        }
     }
 
 }
