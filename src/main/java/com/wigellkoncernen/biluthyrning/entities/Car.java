@@ -39,7 +39,7 @@ public class Car {
         this.model = model;
         this.booked = booked;
     }
-
+@JsonIgnore
     public List<Booking> getListOfBookings() {
         return listOfBookings;
     }

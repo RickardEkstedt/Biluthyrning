@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/")
+@RequestMapping(value = "/api/v1")
 public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping(value = "customers")
+    @GetMapping(value = "/customers")
     public List<Customer> getCustomers() {
         return customerService.getCustomers();
 
