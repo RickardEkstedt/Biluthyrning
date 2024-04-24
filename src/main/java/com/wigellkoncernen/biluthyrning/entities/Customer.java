@@ -1,5 +1,7 @@
 package com.wigellkoncernen.biluthyrning.entities;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -11,6 +13,7 @@ public class Customer {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
+
 
     @JsonIgnoreProperties("customer")
     @OneToMany(/*fetch = FetchType.LAZY,*/mappedBy = "customer",cascade = CascadeType.ALL)
@@ -40,6 +43,7 @@ public class Customer {
         this.phone = phone;
     }
 
+@JsonIgnore
     public List<Booking> getListOfBookings() {
         return listOfBookings;
     }
