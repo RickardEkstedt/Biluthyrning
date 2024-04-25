@@ -2,7 +2,7 @@ package com.wigellkoncernen.biluthyrning.services;
 
 import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
-import com.wigellkoncernen.biluthyrning.exceptions.ResourceAlreadyExists;
+
 import com.wigellkoncernen.biluthyrning.repositories.BookingRepository;
 import com.wigellkoncernen.biluthyrning.exceptions.ResourceNotFoundException;
 import org.apache.log4j.Level;
@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
-import java.util.Optional;
 
 
 @Service
@@ -40,34 +37,7 @@ public class BookingService implements BookingServiceInterface {
 
         return bookings;
     }
-    private double calculateTotalPrice(LocalDate startDate, LocalDate endDate, double carPrice) {
-        // Om bokningen inte är avslutad ännu
-        if (endDate.isAfter(LocalDate.now())) {
-            // Beräkna antalet dagar mellan startdatumet och dagens datum inklusive båda dagarna
-            long daysBetween = ChronoUnit.DAYS.between(startDate, LocalDate.now()) + 1;
 
-            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
-            if (daysBetween < 1) {
-                return 0;
-            }
-
-            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
-            double totalPrice = daysBetween * carPrice;
-            return totalPrice;
-        } else {
-            // Om bokningen är avslutad, använd den ursprungliga beräkningen
-            long daysBetween = ChronoUnit.DAYS.between(startDate, endDate) + 1;
-
-            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
-            if (daysBetween < 1) {
-                return 0;
-            }
-
-            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
-            double totalPrice = daysBetween * carPrice;
-            return totalPrice;
-        }
-    }
 
     @Override
     public List<Booking> getBookings() {
@@ -88,7 +58,7 @@ public class BookingService implements BookingServiceInterface {
         booking.setBooked(false);
         bookingRepository.save(booking);
         logger.log(Level.WARN, "Booking with id " + booking.getId() + " canceled");
-        //TODO kolla om det går att använda bara id och skicka med det från postman istället
+
     }
 
     @Override
@@ -136,5 +106,34 @@ public class BookingService implements BookingServiceInterface {
             }
         }
         return true;
+    }
+
+    private double calculateTotalPrice(LocalDate startDate, LocalDate endDate, double carPrice) {
+        // Om bokningen inte är avslutad ännu
+        if (endDate.isAfter(LocalDate.now())) {
+            // Beräkna antalet dagar mellan startdatumet och dagens datum inklusive båda dagarna
+            long daysBetween = ChronoUnit.DAYS.between(startDate, LocalDate.now()) + 1;
+
+            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
+            if (daysBetween < 1) {
+                return 0;
+            }
+
+            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
+            double totalPrice = daysBetween * carPrice;
+            return totalPrice;
+        } else {
+            // Om bokningen är avslutad, använd den ursprungliga beräkningen
+            long daysBetween = ChronoUnit.DAYS.between(startDate, endDate) + 1;
+
+            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
+            if (daysBetween < 1) {
+                return 0;
+            }
+
+            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
+            double totalPrice = daysBetween * carPrice;
+            return totalPrice;
+        }
     }
 }

@@ -1,6 +1,8 @@
 package com.wigellkoncernen.biluthyrning.services;
 
+import com.wigellkoncernen.biluthyrning.entities.Car;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
+import com.wigellkoncernen.biluthyrning.exceptions.ResourceAlreadyExists;
 import com.wigellkoncernen.biluthyrning.exceptions.ResourceNotFoundException;
 import com.wigellkoncernen.biluthyrning.repositories.CustomerRepository;
 import org.apache.log4j.Level;
@@ -17,7 +19,6 @@ public class CustomerService implements CustomerServiceInterface {
     private CustomerRepository customerRepository;
 
     Logger logger = Logger.getLogger(CustomerService.class);
-
 
 
     @Override
@@ -47,9 +48,14 @@ public class CustomerService implements CustomerServiceInterface {
         return excistingCustomer;
     }
 
+    @Override
     public Customer addNewCustomer(Customer customer) {
-
-        logger.log(Level.WARN, "Admin added new customer " + customer);
+        for (Customer c : customerRepository.findAll()) {
+            if (customer.getUserName().equals(c.getUserName())) {
+                throw new ResourceAlreadyExists("Customer", "Username", customer.getUserName());
+            }
+        }
+        logger.log(Level.WARN, "Admin added new customer with username " + customer.getUserName());
         return customerRepository.save(customer);
     }
 }

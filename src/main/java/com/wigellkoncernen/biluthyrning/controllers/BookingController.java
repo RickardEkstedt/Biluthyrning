@@ -23,7 +23,7 @@ public class BookingController {
     }
 
     @GetMapping("/orders")
-    public ResponseEntity<List<Booking>> getOrders(){
+    public ResponseEntity<List<Booking>> getOrders() {
         return ResponseEntity.ok(bookingService.getBookings());
     }
 
@@ -31,12 +31,13 @@ public class BookingController {
     public ResponseEntity<String> cancelOrder(@RequestBody Booking booking) {
         System.out.println("test");
         bookingService.cancelBooking(booking);
-        return ResponseEntity.ok("Order canceled");
+        return ResponseEntity.ok("Booking canceled");
     }
 
     @DeleteMapping(value = "/deleteorder")
-    public void deleteBooking(@RequestBody Booking booking) {
+    public ResponseEntity<String> deleteBooking(@RequestBody Booking booking) {
         bookingService.deleteBooking(booking);
+        return ResponseEntity.ok("Booking deleted");
     }
 
 

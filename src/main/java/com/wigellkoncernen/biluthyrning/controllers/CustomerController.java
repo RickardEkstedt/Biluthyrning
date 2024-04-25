@@ -18,8 +18,8 @@ public class CustomerController {
     private CustomerService customerService;
 
     @GetMapping(value = "/customers")
-    public List<Customer> getCustomers() {
-        return customerService.getCustomers();
+    public ResponseEntity<List<Customer>> getCustomers() {
+        return ResponseEntity.ok(customerService.getCustomers());
     }
 
     @DeleteMapping(value = "/deletecustomer")

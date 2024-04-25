@@ -19,11 +19,11 @@ public class Booking {
     @Column
     private boolean booked;
     @JsonIgnoreProperties("listOfBookings")
-    @ManyToOne(/*cascade = CascadeType.ALL,*/ fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(referencedColumnName = "id", nullable = false)
     private Customer customer;
     @JsonIgnoreProperties("listOfBookings")
-    @ManyToOne(/*cascade = CascadeType.ALL, */fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(referencedColumnName = "id", nullable = false)
     private Car car;
 
@@ -34,12 +34,13 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(LocalDate startDate, LocalDate endDate, boolean booked, Customer customer, Car car) {
+    public Booking(LocalDate startDate, LocalDate endDate, boolean booked, Customer customer, Car car, Double totalPrice) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.booked = booked;
         this.customer = customer;
         this.car = car;
+        this.totalPrice = totalPrice;
     }
 
     public LocalDate getStartDate() {

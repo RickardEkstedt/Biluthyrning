@@ -25,14 +25,16 @@ public class CarController {
 
     @PostMapping(value = "/addcar")
     public ResponseEntity<Car> addNewCar(@RequestBody Car car) {
-        return ResponseEntity.ok(carService.addNewCar(car));}
+        return ResponseEntity.ok(carService.addNewCar(car));
+    }
 
     @GetMapping("/allcars")
     public ResponseEntity<List<Car>> getAllCars() {
         List<Car> allCars = carService.getAllCars();
-        return ResponseEntity.ok().body(allCars);
+        return ResponseEntity.ok(allCars);
 
     }
+
     @PutMapping(value = "/updatecar")
     public ResponseEntity<String> updateCar(@RequestBody Car updatedCar) {
         try {
@@ -44,7 +46,9 @@ public class CarController {
     }
 
     @DeleteMapping(value = "/deletecar")
-    public void deleteCar(@RequestBody Car car) {
+    public ResponseEntity<String> deleteCar(@RequestBody Car car) {
         carService.deleteCar(car);
+        return ResponseEntity.ok("Car successfully deleted");
+
     }
 }

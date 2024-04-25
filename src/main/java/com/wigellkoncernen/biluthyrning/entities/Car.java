@@ -15,15 +15,15 @@ public class Car {
     private Long id;
 
     @JsonIgnoreProperties("car")
-    @OneToMany(/*fetch = FetchType.LAZY, */mappedBy = "car", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
-    @Column (length =  15, nullable = false)
+    @Column(length = 15, nullable = false)
     private String plateNo;
-    @Column (nullable = false)
+    @Column(nullable = false)
     private int price;
-    @Column (length =  20, nullable = false)
+    @Column(length = 20, nullable = false)
     private String manufacturer;
-    @Column (length =  25, nullable = false)
+    @Column(length = 25, nullable = false)
     private String model;
 
     private boolean booked;
@@ -39,7 +39,8 @@ public class Car {
         this.model = model;
         this.booked = booked;
     }
-@JsonIgnore
+
+    @JsonIgnore
     public List<Booking> getListOfBookings() {
         return listOfBookings;
     }

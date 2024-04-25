@@ -11,24 +11,24 @@ import java.util.List;
 @Entity
 public class Customer {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
 
     @JsonIgnoreProperties("customer")
-    @OneToMany(/*fetch = FetchType.LAZY,*/mappedBy = "customer",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private List<Booking> listOfBookings = new ArrayList<>();
 
 
-    @Column (length =  35, nullable = false)
+    @Column(length = 35, nullable = false)
     private String name;
-    @Column (length =  25, nullable = false)
+    @Column(length = 25, nullable = false)
     private String userName;
-    @Column (length =  35, nullable = false)
+    @Column(length = 35, nullable = false)
     private String email;
-    @Column (length =  60, nullable = false)
+    @Column(length = 60, nullable = false)
     private String adress;
-    @Column (length =  20, nullable = false)
+    @Column(length = 20, nullable = false)
     private Long phone;
 
     public Customer() {
@@ -43,7 +43,7 @@ public class Customer {
         this.phone = phone;
     }
 
-@JsonIgnore
+    @JsonIgnore
     public List<Booking> getListOfBookings() {
         return listOfBookings;
     }

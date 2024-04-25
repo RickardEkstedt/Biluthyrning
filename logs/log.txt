@@ -11,3 +11,26 @@ select b1_0.id,b1_0.booked,b1_0.car_id,c1_0.id,c1_0.booked,c1_0.manufacturer,c1_
 2024-04-19 12:39:36,819 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Customer canceled booking with id 1
 2024-04-19 13:05:17,098 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
 2024-04-19 13:05:54,546 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-25 09:29:01,227 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Booking with id 1 canceled
+2024-04-25 09:29:05,053 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: addNewCar : Admin added new car with plateNo abc 123
+2024-04-25 09:29:21,409 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-25 09:29:26,363 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-25 09:29:33,667 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-25 09:30:13,752 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: addNewCustomer : Admin added new customer com.wigellkoncernen.biluthyrning.entities.Customer@35c33f26
+2024-04-25 09:30:17,885 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: deleteCustomer : Customer with id 6 has been deleted
+2024-04-25 09:30:21,344 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: updateCustomer : Customer with id 1 has been updated
+2024-04-25 10:11:37,025 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: cancelBooking : Booking with id 1 canceled
+2024-04-25 10:12:23,673 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: addNewCar : Admin added new car with plateNo abc 123
+2024-04-25 10:15:50,678 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 2 deleted
+2024-04-25 10:16:33,500 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 1 deleted
+2024-04-25 10:19:48,271 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-25 10:21:11,035 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: bookCar : Customer with id 1 have booked a car
+2024-04-25 10:22:30,204 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 1 deleted
+2024-04-25 10:24:21,439 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-25 10:26:27,930 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: addNewCustomer : Admin added new customer com.wigellkoncernen.biluthyrning.entities.Customer@2de56b46
+2024-04-25 10:26:41,176 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: deleteCustomer : Customer with id 6 has been deleted
+2024-04-25 10:26:57,327 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: updateCustomer : Customer with id 1 has been updated
+2024-04-25 10:36:05,124 : WARN : com.wigellkoncernen.biluthyrning.services.BookingService: deleteBooking : Booking with id 1 deleted
+2024-04-25 10:40:09,430 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-25 10:57:13,363 : WARN : com.wigellkoncernen.biluthyrning.services.CarService: deleteCar : Car with id 2 was deleted
+2024-04-25 11:08:53,377 : WARN : com.wigellkoncernen.biluthyrning.services.CustomerService: addNewCustomer : Admin added new customer with username GertHha
