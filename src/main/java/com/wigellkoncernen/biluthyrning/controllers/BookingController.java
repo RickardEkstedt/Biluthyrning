@@ -3,7 +3,6 @@ package com.wigellkoncernen.biluthyrning.controllers;
 import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
 import com.wigellkoncernen.biluthyrning.services.BookingService;
-import org.hibernate.query.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
@@ -23,6 +22,11 @@ public class BookingController {
         return ResponseEntity.ok().body(myOrders);
     }
 
+    @GetMapping("/orders")
+    public ResponseEntity<List<Booking>> getOrders(){
+        return ResponseEntity.ok(bookingService.getBookings());
+    }
+
     @PutMapping(value = "/cancelorder")
     public ResponseEntity<String> cancelOrder(@RequestBody Booking booking) {
         System.out.println("test");
@@ -40,7 +44,4 @@ public class BookingController {
     public ResponseEntity<String> orderCar(@RequestBody Booking booking) {
         return ResponseEntity.ok(bookingService.bookCar(booking));
     }
-
 }
-
-

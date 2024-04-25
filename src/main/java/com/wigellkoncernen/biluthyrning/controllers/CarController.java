@@ -48,5 +48,3 @@ public class CarController {
         carService.deleteCar(car);
     }
 }
-
-

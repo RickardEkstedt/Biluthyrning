@@ -3,6 +3,7 @@ package com.wigellkoncernen.biluthyrning.services;
 import com.wigellkoncernen.biluthyrning.entities.Booking;
 import com.wigellkoncernen.biluthyrning.entities.Customer;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface BookingServiceInterface {
@@ -18,6 +19,5 @@ public interface BookingServiceInterface {
     void deleteBooking(Booking booking);
 
     String bookCar(Booking booking);
-
-
+    
 }

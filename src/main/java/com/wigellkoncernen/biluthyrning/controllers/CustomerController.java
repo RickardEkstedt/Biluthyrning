@@ -40,4 +40,3 @@ public class CustomerController {
         return new ResponseEntity<>(newCustomer, HttpStatus.CREATED);
     }
 }
-
