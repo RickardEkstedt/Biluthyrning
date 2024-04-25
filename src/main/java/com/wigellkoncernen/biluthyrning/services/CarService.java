@@ -95,8 +95,8 @@ public class CarService implements CarServiceInterface {
 
             carRepository.save(car);
 
-            // Konvertera carId till en sträng och logga den
-            logger.log(Level.INFO,"Car with ID " + carId.toString() + " updated");
+            // Logga uppdateringen
+            logger.log(Level.INFO,("Car with ID " + carId + " updated"));
         } else {
             throw new ResourceNotFoundException("Car", "id", carId);
         }

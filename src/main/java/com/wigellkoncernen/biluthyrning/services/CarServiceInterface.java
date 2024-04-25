@@ -16,15 +16,4 @@ public interface CarServiceInterface {
 
     void updateCar(Car car);
 
-
-    //kund lista tillgängliga bilar, ev. via CarDTO entity (separata repo, service & controller)
-   /* String addCar(Car car);
-    void deleteCar(Long id);
-
-    List<Car> getCars();*/
-
-
-
-
-
 }

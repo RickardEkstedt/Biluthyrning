@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -30,14 +31,56 @@ public class BookingService implements BookingServiceInterface {
         if (bookings.isEmpty()) {
             throw new ResourceNotFoundException("Booking", "customer", customer.getId());
         }
+
+        // Beräkna det totala priset för varje bokning och sätt det i objektet
+        for (Booking booking : bookings) {
+            double totalPrice = calculateTotalPrice(booking.getStartDate(), booking.getEndDate(), booking.getCar().getPrice());
+            booking.setTotalPrice(totalPrice);
+        }
+
         return bookings;
+    }
+    private double calculateTotalPrice(LocalDate startDate, LocalDate endDate, double carPrice) {
+        // Om bokningen inte är avslutad ännu
+        if (endDate.isAfter(LocalDate.now())) {
+            // Beräkna antalet dagar mellan startdatumet och dagens datum inklusive båda dagarna
+            long daysBetween = ChronoUnit.DAYS.between(startDate, LocalDate.now()) + 1;
+
+            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
+            if (daysBetween < 1) {
+                return 0;
+            }
+
+            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
+            double totalPrice = daysBetween * carPrice;
+            return totalPrice;
+        } else {
+            // Om bokningen är avslutad, använd den ursprungliga beräkningen
+            long daysBetween = ChronoUnit.DAYS.between(startDate, endDate) + 1;
+
+            // Om antalet dagar är mindre än 1, returnera 0 (för att undvika negativa eller nollpriser)
+            if (daysBetween < 1) {
+                return 0;
+            }
+
+            // Beräkna det totala priset genom att multiplicera antalet dagar med bilens pris per dag
+            double totalPrice = daysBetween * carPrice;
+            return totalPrice;
+        }
     }
 
     @Override
     public List<Booking> getBookings() {
-        return bookingRepository.findAll();
-    }
+        List<Booking> bookings = bookingRepository.findAll();
 
+        // Beräkna det totala priset för varje bokning och sätt det i objektet
+        for (Booking booking : bookings) {
+            double totalPrice = calculateTotalPrice(booking.getStartDate(), booking.getEndDate(), booking.getCar().getPrice());
+            booking.setTotalPrice(totalPrice);
+        }
+
+        return bookings;
+    }
 
     @Override
     public void cancelBooking(Booking booking) {

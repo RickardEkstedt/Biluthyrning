@@ -12,5 +12,4 @@ public interface CustomerServiceInterface {
     void deleteCustomer(Customer customer);
     Customer updateCustomer(Customer customer);
 
-
 }

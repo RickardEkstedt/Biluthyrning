@@ -27,13 +27,17 @@ public class Booking {
     @JoinColumn(referencedColumnName = "id", nullable = false)
     private Car car;
 
+    @Column
+    private Double totalPrice;
+
+
     public Booking() {
     }
 
     public Booking(LocalDate startDate, LocalDate endDate, boolean booked, Customer customer, Car car) {
         this.startDate = startDate;
         this.endDate = endDate;
-        this.booked=booked;
+        this.booked = booked;
         this.customer = customer;
         this.car = car;
     }
@@ -84,5 +88,13 @@ public class Booking {
 
     public Long getId() {
         return id;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }
